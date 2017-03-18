@@ -1,0 +1,1431 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10100.17.0207.2140                               -->
+<workbook source-build='10.1.5 (10100.17.0207.2140)' source-platform='win' version='10.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='summary_sample_orig_quarter' inline='true' name='federated.19q18ee0kia23811by6cg06xctd3' version='10.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='summary_sample_orig_quarter' name='textscan.0x1yo1801ay7gs134avx41kt2bxt'>
+            <connection class='textscan' directory='G:/ADSMidterm/ads_midterm_team7/ads_midterm_team7/summary' filename='summary_sample_orig_quarter.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0x1yo1801ay7gs134avx41kt2bxt' name='summary_sample_orig_quarter.csv' table='[summary_sample_orig_quarter#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='ORIGINATION YEAR' ordinal='0' />
+            <column datatype='integer' name='ORIGINATION QUARTER' ordinal='1' />
+            <column datatype='integer' name='Sum of UPB per year per quarter' ordinal='2' />
+            <column datatype='integer' name='Average of UPB per year per quarter' ordinal='3' />
+            <column datatype='real' name='Average of Credit Score per year per quarter' ordinal='4' />
+            <column datatype='real' name='Average of CLTV Score per year per quarter' ordinal='5' />
+            <column datatype='real' name='Average of LTV Score per year per quarter' ordinal='6' />
+            <column datatype='real' name='Average of Interest rate per year per quarter' ordinal='7' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ORIGINATION YEAR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ORIGINATION YEAR]</local-name>
+            <parent-name>[summary_sample_orig_quarter.csv]</parent-name>
+            <remote-alias>ORIGINATION YEAR</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ORIGINATION QUARTER</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ORIGINATION QUARTER]</local-name>
+            <parent-name>[summary_sample_orig_quarter.csv]</parent-name>
+            <remote-alias>ORIGINATION QUARTER</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum of UPB per year per quarter</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sum of UPB per year per quarter]</local-name>
+            <parent-name>[summary_sample_orig_quarter.csv]</parent-name>
+            <remote-alias>Sum of UPB per year per quarter</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average of UPB per year per quarter</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Average of UPB per year per quarter]</local-name>
+            <parent-name>[summary_sample_orig_quarter.csv]</parent-name>
+            <remote-alias>Average of UPB per year per quarter</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average of Credit Score per year per quarter</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average of Credit Score per year per quarter]</local-name>
+            <parent-name>[summary_sample_orig_quarter.csv]</parent-name>
+            <remote-alias>Average of Credit Score per year per quarter</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average of CLTV Score per year per quarter</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average of CLTV Score per year per quarter]</local-name>
+            <parent-name>[summary_sample_orig_quarter.csv]</parent-name>
+            <remote-alias>Average of CLTV Score per year per quarter</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average of LTV Score per year per quarter</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average of LTV Score per year per quarter]</local-name>
+            <parent-name>[summary_sample_orig_quarter.csv]</parent-name>
+            <remote-alias>Average of LTV Score per year per quarter</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average of Interest rate per year per quarter</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average of Interest rate per year per quarter]</local-name>
+            <parent-name>[summary_sample_orig_quarter.csv]</parent-name>
+            <remote-alias>Average of Interest rate per year per quarter</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[summary_sample_orig_quarter.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Origination Quarter' datatype='integer' name='[ORIGINATION QUARTER]' role='dimension' type='quantitative' />
+      <column caption='Origination Year' datatype='integer' name='[ORIGINATION YEAR]' role='dimension' type='quantitative' />
+      <drill-paths>
+        <drill-path name='Date'>
+          <field>[ORIGINATION YEAR]</field>
+          <field>[ORIGINATION QUARTER]</field>
+        </drill-path>
+      </drill-paths>
+      <layout dim-ordering='alphabetic' dim-percentage='0.392116' measure-ordering='alphabetic' measure-percentage='0.607884' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average_CLTV_perYear_perQuarter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='summary_sample_orig_quarter' name='federated.19q18ee0kia23811by6cg06xctd3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19q18ee0kia23811by6cg06xctd3'>
+            <column datatype='real' name='[Average of CLTV Score per year per quarter]' role='measure' type='quantitative' />
+            <column caption='Origination Year' datatype='integer' name='[ORIGINATION YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[ORIGINATION YEAR]' derivation='None' name='[none:ORIGINATION YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Average of CLTV Score per year per quarter]' derivation='Sum' name='[sum:Average of CLTV Score per year per quarter:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</rows>
+        <cols>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1999</value>
+                <value>308.6249383</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-26' y='-13' />
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2000</value>
+                <value>312.95844546000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2001</value>
+                <value>305.44623891999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2002</value>
+                <value>300.08418355999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2003</value>
+                <value>294.52709382</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2004</value>
+                <value>301.63599155999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2005</value>
+                <value>284.84318822</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2006</value>
+                <value>292.50997152999997</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2007</value>
+                <value>298.16273948999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2008</value>
+                <value>286.03063335000002</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2009</value>
+                <value>267.41117286999997</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2010</value>
+                <value>270.12040000000002</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2011</value>
+                <value>273.91018355</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2012</value>
+                <value>276.05160000000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2013</value>
+                <value>288.14728517999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2014</value>
+                <value>302.33346267000002</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='16' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2015</value>
+                <value>297.23303999999996</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='17' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of CLTV Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2016</value>
+                <value>73.486918950000003</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+    </worksheet>
+    <worksheet name='Average_CreditScore_perYear_perQuarter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='summary_sample_orig_quarter' name='federated.19q18ee0kia23811by6cg06xctd3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.19q18ee0kia23811by6cg06xctd3'>
+            <column datatype='real' name='[Average of Credit Score per year per quarter]' role='measure' type='quantitative' />
+            <column caption='Origination Quarter' datatype='integer' name='[ORIGINATION QUARTER]' role='dimension' type='quantitative' />
+            <column caption='Origination Year' datatype='integer' name='[ORIGINATION YEAR]' role='dimension' type='quantitative' />
+            <column-instance column='[ORIGINATION QUARTER]' derivation='None' name='[none:ORIGINATION QUARTER:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ORIGINATION YEAR]' derivation='None' name='[none:ORIGINATION YEAR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Average of Credit Score per year per quarter]' derivation='Sum' name='[sum:Average of Credit Score per year per quarter:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION QUARTER:qk]' included-values='in-range-or-null'>
+            <min>4</min>
+            <max>4</max>
+          </filter>
+          <slices>
+            <column>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION QUARTER:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</rows>
+        <cols>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2001</value>
+                <value>2856.4620918000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1999</value>
+                <value>2844.5297484000002</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2000</value>
+                <value>2847.7190834000003</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2002</value>
+                <value>2863.5239991999997</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2003</value>
+                <value>2895.0762122000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2004</value>
+                <value>2871.3974843999995</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2005</value>
+                <value>2896.0790656999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2006</value>
+                <value>2890.8781654999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2007</value>
+                <value>2892.3256937999995</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2008</value>
+                <value>2964.0075938999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2009</value>
+                <value>3048.6058969000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2010</value>
+                <value>3052.34328</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2011</value>
+                <value>3055.2623113999998</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2012</value>
+                <value>3066.1546399999997</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2013</value>
+                <value>3031.9251294000001</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2014</value>
+                <value>3005.4392839000002</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='16' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION YEAR:qk]</field>
+                  <field>[federated.19q18ee0kia23811by6cg06xctd3].[sum:Average of Credit Score per year per quarter:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2015</value>
+                <value>3006.9351999999999</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Average_CLTV_perYear_perQuarter'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' maximized='true' name='Average_CreditScore_perYear_perQuarter'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.19q18ee0kia23811by6cg06xctd3].[none:ORIGINATION QUARTER:qk]' show-domain='false' show-null-ctrls='false' type='filter' values='relevant' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Average_CLTV_perYear_perQuarter' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Average_CreditScore_perYear_perQuarter' width='192'>
+      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
+      zf8Hwm8liEWRpigAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
